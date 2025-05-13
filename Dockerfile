@@ -1,10 +1,12 @@
 FROM php:8.1-apache
 
-# Enable mod_rewrite if needed
+# Install mysqli extension
+RUN docker-php-ext-install mysqli
+
+# Enable Apache mod_rewrite (if needed)
 RUN a2enmod rewrite
 
-# Copy all files into Apache's root folder
+# Copy all project files
 COPY . /var/www/html/
 
-# Set working directory
 WORKDIR /var/www/html
