@@ -1,13 +1,11 @@
 <?php
-// Database connection
 $host = '127.0.0.1';
-$user = 'root'; // replace with your DB username
-$password = ''; // replace with your DB password
-$database = 'ims'; // replace with your DB name
+$user = 'root';
+$password = '';
+$database = 'ims';
 
 $conn = new mysqli($host, $user, $password, $database);
 
-// Check connection
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
