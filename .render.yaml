@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: my-php-site
+    env: docker
+    plan: free
+    branch: main
+    region: oregon
