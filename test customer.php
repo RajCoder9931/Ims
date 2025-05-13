@@ -1,6 +1,6 @@
 <?php
 // Database connection
-$conn = new mysqli('localhost', 'root', '', 'salesinvoicedb');
+$conn = new mysqli('127.0.0.1', 'root', '', 'salesinvoicedb');
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }

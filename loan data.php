@@ -1,6 +1,6 @@
 <?php
 // Database connection
-$conn = new mysqli('localhost', 'root', '', 'ims');
+$conn = new mysqli('127.0.0.1', 'root', '', 'ims');
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }

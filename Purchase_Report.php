@@ -1,7 +1,7 @@
 <?php
 // Database connection
 try {
-    $pdo = new PDO("mysql:host=localhost;dbname=ims", "root", "");
+    $pdo = new PDO("mysql:host=127.0.0.1;dbname=ims", "root", "");
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
     // Handle delete request
